@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGrow | Digital Performance</title>
+    <style>
+        /* Stark Black & White Theme */
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --gray: #f0f0f0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.8;
+            font-weight: 300;
+        }
+        header {
+            background: var(--black);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--black);
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+        h1 {
+            font-size: 3rem;
+            letter-spacing: -0.05em;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 3rem 0 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        h2:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--black);
+        }
+        .btn {
+            display: inline-block;
+            background: var(--black);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: 1px solid var(--black);
+            text-decoration: none;
+            margin: 1.5rem 0;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        .btn:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+        .services, .work, .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .card {
+            background: var(--white);
+            border: 1px solid var(--black);
+            padding: 2rem;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .container { padding: 2rem 0; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>iGrow</h1>
+            <p>Digital performance engineered for scale</p>
+            <a href="#contact" class="btn">Work with us</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About</h2>
+            <p>We build measurable digital growth systems for influencers and brands. No fluff, just results.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>Influencer Portfolios</h3>
+                    <p>Precision-designed media kits that convert brands at higher rates.</p>
+                </div>
+                <div class="card">
+                    <h3>Performance Content</h3>
+                    <p>Data-optimized content that drives engagement and conversions.</p>
+                </div>
+                <div class="card">
+                    <h3>Growth Systems</h3>
+                    <p>Repeatable frameworks for audience and revenue expansion.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>Case Studies</h2>
+            <div class="work">
+                <div class="card">
+                    <h3>@TechCreator</h3>
+                    <p>Increased brand deal revenue by 220% in 90 days through portfolio optimization.</p>
+                </div>
+                <div class="card">
+                    <h3>@LifestyleBrand</h3>
+                    <p>Scaled from 10K to 75K followers with our content engine.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Results</h2>
+            <div class="testimonials">
+                <div class="card">
+                    <p>"iGrow's system delivered 5 qualified brand leads in our first month."</p>
+                    <p style="margin-top: 1rem; font-weight: 600;">— @FashionInfluencer</p>
+                </div>
+                <div class="card">
+                    <p>"Finally, a partner who understands performance marketing for creators."</p>
+                    <p style="margin-top: 1rem; font-weight: 600;">— @Founder, DTC Brand</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Connect</h2>
+            <p>For portfolio samples and pricing:</p>
+            <a href="mailto:work@igrow.com" class="btn">work@igrow.com</a>
+            <p style="margin-top: 2rem;">Or DM <a href="https://instagram.com/igrow__" style="color: var(--black); text-decoration: underline;" target="_blank">@iGrow</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 iGrow. All rights reserved.</p>
+    </footer>
+</body>
+</html>
